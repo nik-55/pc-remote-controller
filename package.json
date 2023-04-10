@@ -1,0 +1,16 @@
+{
+  "name": "jb-pc-controller",
+  "productName": "JB PC Remote Controller",
+  "version": "1.0.0",
+  "description": "It is a remote pc controller build by jawahar bhawan team.",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^24.0.0"
+  }
+}
