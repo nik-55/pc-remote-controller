@@ -1,7 +1,10 @@
+@import './switch_btn.css';
+
 * {
     margin: 0%;
     padding: 0%;
     box-sizing: border-box;
+    font-family:cursive
 }
 
 .main-container {
@@ -32,4 +35,17 @@
 
 .login-container button:hover {
     cursor: pointer;
+}
+
+.dashboard-container{
+    display: none;
+    padding: 1em;
+    min-height: 100px;
+    flex-direction: column;
+    align-items: center;
+}
+
+.switch-container{
+    display: flex;
+    align-items: center;
 }

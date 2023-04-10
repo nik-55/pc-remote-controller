@@ -3,10 +3,18 @@ const path = require('path')
 
 const isMac = process.platform === 'darwin'
 const isDevelopment = process.env.NODE_ENV !== 'production'
+const port = 3123
+
+const {express_app} = require('./api.js')
+
+// Create local server to listen to request from main server
+express_app.listen(port, () => {
+  console.log(`Example app listening on port ${port}`)
+})
 
 const createWindow = () => {
     const win = new BrowserWindow({
-        width: 600,
+        width: 800,
         height: 600,
     })
 

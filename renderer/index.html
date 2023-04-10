@@ -3,8 +3,9 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
-    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <!-- Electron Security meta tags -->
+    <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
+    <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
     <link rel="stylesheet" href="./css/style.css">
     <title>JB PC Remote Controller</title>
 </head>
@@ -17,6 +18,15 @@
             <input id="login-input-2" type="password" placeholder="Password">
             <button type="submit">Login</button>
         </form>
+        <div id="dashboard" class="dashboard-container">
+            <div class="switch-container">
+                <span>Online</span>
+                <label class="switch">
+                    <input id="online-switch" type="checkbox">
+                    <span class="slider round"></span>
+                </label>
+            </div>
+        </div>
         <div class="footer">
             Made with ❤️ by Jawahar Bhawan Team
         </div>
