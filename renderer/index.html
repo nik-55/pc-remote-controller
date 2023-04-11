@@ -6,25 +6,23 @@
     <!-- Electron Security meta tags -->
     <!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'" />
     <meta http-equiv="X-Content-Security-Policy" content="default-src 'self'; script-src 'self'" /> -->
+    <link rel="stylesheet" href="../node_modules/bootstrap/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="./css/style.css">
     <title>JB PC Remote Controller</title>
 </head>
 
 <body>
-    <div class="main-container">
+    <div class="main-container bg-dark text-light">
         <h1>PC Remote Controller</h1>
         <form id="login-form" class="login-container">
-            <input id="login-input-1" type="text" placeholder="Username">
-            <input id="login-input-2" type="password" placeholder="Password">
-            <button type="submit">Login</button>
+            <input id="login-input-1" type="text" class="form-control" placeholder="Username">
+            <input id="login-input-2" class="form-control" type="password" placeholder="Password">
+            <button type="submit" class="btn btn-success">Login</button>
         </form>
         <div id="dashboard" class="dashboard-container">
-            <div class="switch-container">
-                <span>Online</span>
-                <label class="switch">
-                    <input id="online-switch" type="checkbox">
-                    <span class="slider round"></span>
-                </label>
+            <div class="form-check form-switch">
+                <input class="form-check-input" type="checkbox" role="switch" id="online-switch" checked>
+                <label class="form-check-label" for="online-switch">Online</label>
             </div>
         </div>
         <div class="footer">
